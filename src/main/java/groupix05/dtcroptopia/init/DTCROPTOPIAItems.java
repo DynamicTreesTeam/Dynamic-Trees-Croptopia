@@ -2,7 +2,6 @@ package groupix05.dtcroptopia.init;
 
 import groupix05.dtcroptopia.DynamicTreesCROPTOPIA;
 import net.minecraft.world.item.Item;
-import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -18,9 +17,6 @@ public class DTCROPTOPIAItems {
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
-    }
-
-    public static void acceptToDynamicTreesTab (BuildCreativeModeTabContentsEvent event){
     }
 
 }

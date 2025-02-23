@@ -21,7 +21,7 @@ public class DragonFruitFruitGenFeature extends BananaFruitGenFeature {
         LevelAccessor acc = world.accessor();
         CoordUtils.Surround placeDir = CoordUtils.Surround.values()[acc.getRandom().nextInt(8)];
         BlockPos pos = expandRandom(configuration, acc, leavesPos.offset(placeDir.getOffset()));
-        if (acc.getBlockState(pos).canBeReplaced()) {
+        if (acc.getBlockState(pos).getMaterial().isReplaceable()) {
             Float seasonValue = SeasonHelper.getSeasonValue(world, rootPos);
             Fruit fruit = configuration.get(FRUIT);
             if (worldGen) {

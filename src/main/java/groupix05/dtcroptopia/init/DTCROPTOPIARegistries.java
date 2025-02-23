@@ -2,11 +2,9 @@ package groupix05.dtcroptopia.init;
 
 import com.ferreusveritas.dynamictrees.api.registry.TypeRegistryEvent;
 import com.ferreusveritas.dynamictrees.block.leaves.LeavesProperties;
-import com.ferreusveritas.dynamictrees.init.DTRegistries;
 import com.ferreusveritas.dynamictrees.systems.fruit.Fruit;
 import com.ferreusveritas.dynamictrees.systems.genfeature.GenFeature;
 import com.ferreusveritas.dynamictrees.systems.pod.Pod;
-import com.ferreusveritas.dynamictrees.tree.family.Family;
 import com.ferreusveritas.dynamictrees.tree.species.Species;
 import com.ferreusveritas.dynamictrees.util.CommonVoxelShapes;
 import groupix05.dtcroptopia.DynamicTreesCROPTOPIA;
@@ -21,7 +19,6 @@ import net.minecraft.tags.TagKey;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
-import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.DeferredRegister;
@@ -52,7 +49,7 @@ public class DTCROPTOPIARegistries {
     }
 
     public static RegistryObject<SoundEvent> registerSound (String name){
-        return SOUNDS.register(name, ()-> SoundEvent.createVariableRangeEvent(DynamicTreesCROPTOPIA.location(name)));
+        return SOUNDS.register(name, ()-> new SoundEvent(DynamicTreesCROPTOPIA.location(name)));
     }
 
     @SubscribeEvent
@@ -81,14 +78,6 @@ public class DTCROPTOPIARegistries {
     @SubscribeEvent
     public static void onGenFeatureRegistry (final com.ferreusveritas.dynamictrees.api.registry.RegistryEvent<GenFeature> event) {
         DTCROPTOPIAGenFeatures.register(event.getRegistry());
-    }
-
-    @SubscribeEvent
-    public void buildContents(BuildCreativeModeTabContentsEvent event) {
-        // Add to ingredients tab
-        if (event.getTabKey() == DTRegistries.DT_CREATIVE_TAB.getKey()) {
-            DTCROPTOPIAItems.acceptToDynamicTreesTab(event);
-        }
     }
 
 }

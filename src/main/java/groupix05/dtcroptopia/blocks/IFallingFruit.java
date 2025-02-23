@@ -26,7 +26,7 @@ public interface IFallingFruit {
     int fallDamageMax = 40;
     float fallDamageAmount = 2.0F;
 
-    DamageSource getDamageSource(Level level);
+    DamageSource getDamageSource();
 
     default boolean checkToFall(BlockState state, Level world, BlockPos pos, RandomSource random){
         if (getAge(state) < getMaxAge()) return false;
@@ -56,18 +56,18 @@ public interface IFallingFruit {
     }
 
     default FallingBlockEntity getFallingEntity (Level world, BlockPos pos, BlockState state){
-        return new FallingBlockEntity(world, (double)pos.getX() + 0.5D, (double)pos.getY(), (double)pos.getZ() + 0.5D, state){
+        return new FallingBlockEntity(world, (double)pos.getX() + 0.5D, pos.getY(), (double)pos.getZ() + 0.5D, state){
 
             @Override
             public boolean causeFallDamage(float pFallDistance, float pMultiplier, DamageSource pSource) {
                 int i = (int)Math.ceil(pFallDistance - 1.0F);
                 if (i > 0) {
-                    List<Entity> list = Lists.newArrayList(level().getEntities(this, this.getBoundingBox()));
+                    List<Entity> list = Lists.newArrayList(this.level.getEntities(this, this.getBoundingBox()));
                     for(Entity entity : list) {
                         if (entity instanceof LivingEntity){
-                            entity.hurt(getDamageSource(level()),
+                            entity.hurt(getDamageSource(),
                                     (float)Math.min(Math.floor((float)i * IFallingFruit.fallDamageAmount), IFallingFruit.fallDamageMax) * pMultiplier);
-                            level().playSound(null, pos,
+                            level.playSound(null, pos,
                                     DTCROPTOPIARegistries.FRUIT_BONK.get(), SoundSource.BLOCKS,
                                     1.0F, 1.0F);
                         }
@@ -78,13 +78,13 @@ public interface IFallingFruit {
 
             @Nullable
             @Override
-            public ItemEntity spawnAtLocation(@Nonnull ItemStack pStack, float pOffsetY) {
-                return super.spawnAtLocation(getDropOnFallItems( this), pOffsetY);
+            public ItemEntity spawnAtLocation(@Nonnull ItemLike pItem) {
+                return null;
             }
         };
     }
 
-    ItemStack getDropOnFallItems(FallingBlockEntity entity);
+    ItemStack getDropOnFallItems(ItemLike item, FallingBlockEntity entity);
     float getRandomFruitFallChance ();
     float getPlayerDistanceToFall();
     int getAge(BlockState state);

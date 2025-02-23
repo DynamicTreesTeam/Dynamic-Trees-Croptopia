@@ -8,12 +8,10 @@ import com.ferreusveritas.dynamictrees.systems.pod.Pod;
 import groupix05.dtcroptopia.DynamicTreesCROPTOPIA;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
-import net.minecraft.core.Holder;
 import net.minecraft.network.protocol.game.DebugPackets;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.damagesource.DamageSource;
-import net.minecraft.world.damagesource.DamageType;
 import net.minecraft.world.entity.item.FallingBlockEntity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.ItemLike;
@@ -35,8 +33,7 @@ public class FallingPodBlock extends PodBlock implements IFallingFruit {
 
     public FallingPodBlock(Properties properties, Pod pod) {
         super(properties, pod);
-        DamageType damageType = new DamageType(DynamicTreesCROPTOPIA.MOD_ID+".falling_fruit."+ pod.getRegistryName().getPath(), 1F);
-        damageSource = new DamageSource(Holder.direct(damageType));
+        damageSource = new DamageSource(DynamicTreesCROPTOPIA.MOD_ID+".falling_fruit."+ pod.getRegistryName().getPath());
     }
 
     @Override
@@ -65,7 +62,7 @@ public class FallingPodBlock extends PodBlock implements IFallingFruit {
     }
 
     @Override
-    public DamageSource getDamageSource(Level level) {
+    public DamageSource getDamageSource() {
         return damageSource;
     }
 
@@ -82,9 +79,9 @@ public class FallingPodBlock extends PodBlock implements IFallingFruit {
     }
 
     @Override
-    public ItemStack getDropOnFallItems(@Nonnull FallingBlockEntity entity) {
+    public ItemStack getDropOnFallItems(ItemLike item, @Nonnull FallingBlockEntity entity) {
         if (entity.getServer() == null) return ItemStack.EMPTY;
-        ServerLevel level = entity.getServer().getLevel(entity.level().dimension());
+        ServerLevel level = entity.getServer().getLevel(entity.level.dimension());
         if (level == null) return ItemStack.EMPTY;
         List<ItemStack> drops = getDrops(entity.getBlockState(), level, entity.blockPosition(), null);
         if (drops.isEmpty()) return ItemStack.EMPTY;

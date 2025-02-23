@@ -1,7 +1,8 @@
 {
   "textures": {
     "particle": "block/jungle_log",
-    "log": "block/jungle_log"
+    "log": "block/jungle_log",
+    "texture": "dtcroptopia:block/palm_leaves/dragon_fruit_base"
   },
   "elements": [
     {   "from": [ 5, 0, 5 ],
@@ -27,28 +28,28 @@
     {   "from": [ 4, -16, 4 ],
       "to": [ 12, 0, 12 ],
       "faces": {
-        "north": { "uv": [ 0, 0, 8, 16 ], "texture": "#core_bottom", "tintindex": 0},
-        "south": { "uv": [ 0, 0, 8, 16 ], "texture": "#core_bottom", "tintindex": 0},
-        "west":  { "uv": [ 0, 0, 8, 16 ], "texture": "#core_bottom", "tintindex": 0},
-        "east":  { "uv": [ 0, 0, 8, 16 ], "texture": "#core_bottom", "tintindex": 0}
+        "north": { "uv": [ 0, 0, 8, 16 ], "texture": "#texture", "tintindex": 0},
+        "south": { "uv": [ 0, 0, 8, 16 ], "texture": "#texture", "tintindex": 0},
+        "west":  { "uv": [ 0, 0, 8, 16 ], "texture": "#texture", "tintindex": 0},
+        "east":  { "uv": [ 0, 0, 8, 16 ], "texture": "#texture", "tintindex": 0}
       }
     },
     {   "from": [ 4, 0, 4 ],
       "to": [ 12, 16, 12 ],
       "faces": {
-        "north": { "uv": [ 8, 0, 16, 16 ], "texture": "#core_bottom", "tintindex": 0},
-        "south": { "uv": [ 8, 0, 16, 16 ], "texture": "#core_bottom", "tintindex": 0},
-        "west":  { "uv": [ 8, 0, 16, 16 ], "texture": "#core_bottom", "tintindex": 0},
-        "east":  { "uv": [ 8, 0, 16, 16 ], "texture": "#core_bottom", "tintindex": 0}
+        "north": { "uv": [ 8, 0, 16, 16 ], "texture": "#texture", "tintindex": 0},
+        "south": { "uv": [ 8, 0, 16, 16 ], "texture": "#texture", "tintindex": 0},
+        "west":  { "uv": [ 8, 0, 16, 16 ], "texture": "#texture", "tintindex": 0},
+        "east":  { "uv": [ 8, 0, 16, 16 ], "texture": "#texture", "tintindex": 0}
       }
     },
     {   "from": [ 4, 16, 4 ],
       "to": [ 12, 32, 12 ],
       "faces": {
-        "north": { "uv": [ 8, 0, 16, 16 ], "texture": "#core_bottom", "tintindex": 0},
-        "south": { "uv": [ 8, 0, 16, 16 ], "texture": "#core_bottom", "tintindex": 0},
-        "west":  { "uv": [ 8, 0, 16, 16 ], "texture": "#core_bottom", "tintindex": 0},
-        "east":  { "uv": [ 8, 0, 16, 16 ], "texture": "#core_bottom", "tintindex": 0}
+        "north": { "uv": [ 8, 0, 16, 16 ], "texture": "#texture", "tintindex": 0},
+        "south": { "uv": [ 8, 0, 16, 16 ], "texture": "#texture", "tintindex": 0},
+        "west":  { "uv": [ 8, 0, 16, 16 ], "texture": "#texture", "tintindex": 0},
+        "east":  { "uv": [ 8, 0, 16, 16 ], "texture": "#texture", "tintindex": 0}
       }
     }
   ]

@@ -1,5 +1,5 @@
 {
-  "loader": "dynamictrees:small_palm_fronds",
+  "loader": "dtcroptopia:small_palm_fronds",
   "textures": {
     "frond": "dtcroptopia:block/palm_leaves/dragon_fruit_frond"
   }

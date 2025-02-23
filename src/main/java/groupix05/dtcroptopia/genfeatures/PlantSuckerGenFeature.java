@@ -40,12 +40,12 @@ public class PlantSuckerGenFeature extends GenFeature {
     protected boolean postGenerate(GenFeatureConfiguration configuration, PostGenerationContext context) {
         LevelAccessor world = context.level();
         boolean placed = false;
-            for (Direction dir : Direction.Plane.HORIZONTAL){
-                if(context.random().nextFloat() < configuration.get(PLACE_CHANCE_WORLDGEN)) {
-                    if (addSucker(world, context.pos(), true, configuration.get(SUCKER_BLOCK), dir))
-                        placed = true;
-                }
+        for (Direction dir : Direction.Plane.HORIZONTAL){
+            if(context.random().nextFloat() < configuration.get(PLACE_CHANCE_WORLDGEN)) {
+                if (addSucker(world, context.pos(), true, configuration.get(SUCKER_BLOCK), dir))
+                    placed = true;
             }
+        }
         return placed;
     }
 
@@ -62,7 +62,7 @@ public class PlantSuckerGenFeature extends GenFeature {
         for (int i=0; i < 3; i++){
             BlockPos testPos = pos.offset(0, i,0);
             if (world.isAreaLoaded(testPos, 16) &&
-                    world.getBlockState(testPos).canBeReplaced() &&
+                    world.getBlockState(testPos).getMaterial().isReplaceable() &&
                     world.getBlockState(testPos.below()).isFaceSturdy(world, pos, Direction.UP)){
                 return testPos;
             }

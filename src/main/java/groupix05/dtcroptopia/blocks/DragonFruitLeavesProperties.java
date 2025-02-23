@@ -15,7 +15,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.material.MapColor;
+import net.minecraft.world.level.material.Material;
 
 import javax.annotation.Nonnull;
 
@@ -28,8 +28,9 @@ public class DragonFruitLeavesProperties extends PalmLeavesProperties {
     }
 
     @Override
-    public MapColor getDefaultMapColor() {
-        return MapColor.PLANT;
+    @Nonnull
+    public Material getDefaultMaterial() {
+        return Material.CACTUS;
     }
 
     @Override
@@ -49,7 +50,7 @@ public class DragonFruitLeavesProperties extends PalmLeavesProperties {
         public void entityInside(BlockState state, Level worldIn, BlockPos pos, Entity entity) {
             boolean damage = false;
 
-            if (damage) entity.hurt(worldIn.damageSources().cactus(), 1.0F);
+            if (damage) entity.hurt(DamageSource.CACTUS, 1.0F);
         }
 
 
