@@ -6,16 +6,21 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "conditions": [
-            {
-              "block": "dtcroptopia:date",
-              "condition": "minecraft:block_state_property",
-              "properties": {
-                "age": "3"
-              }
-            }
-          ],
           "functions": [
+            {
+              "add": false,
+              "conditions": [
+                {
+                  "block": "dtcroptopia:date",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "age": "3"
+                  }
+                }
+              ],
+              "count": 1.0,
+              "function": "minecraft:set_count"
+            },
             {
               "function": "minecraft:explosion_decay"
             }
@@ -25,6 +30,5 @@
       ],
       "rolls": 1.0
     }
-  ],
-  "random_sequence": "dtcroptopia:blocks/date"
+  ]
 }

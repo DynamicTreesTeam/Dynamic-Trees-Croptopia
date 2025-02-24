@@ -8,7 +8,7 @@
       "species": {
         "method": "SPLICE_BEFORE",
         "random": {
-          "...": 25,
+          "...": 20,
           "dynamictrees:apple_oak": 3,
           "dtcroptopia:peach": 1,
           "dtcroptopia:orange": 2
@@ -25,7 +25,7 @@
       "species": {
         "method": "SPLICE_BEFORE",
         "random": {
-          "...": 300,
+          "...": 280,
           "dtcroptopia:apricot": 1,
           "dtcroptopia:avocado": 1,
           "dtcroptopia:cherry": 1,
@@ -50,7 +50,7 @@
       "species": {
         "method": "SPLICE_BEFORE",
         "random": {
-          "...": 120,
+          "...": 100,
           "dtcroptopia:almond": 1,
           "dtcroptopia:cashew": 1,
           "dtcroptopia:pecan": 1,
@@ -68,7 +68,7 @@
       "species": {
         "method": "SPLICE_BEFORE",
         "random": {
-          "...": 160,
+          "...": 150,
           "dtcroptopia:banana": 1,
           "dtcroptopia:cinnamon": 1,
           "dtcroptopia:coconut": 1,

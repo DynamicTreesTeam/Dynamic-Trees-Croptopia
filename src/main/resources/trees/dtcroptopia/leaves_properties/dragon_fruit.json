@@ -1,5 +1,5 @@
 {
-  "type": "dtphc2:dragon_fruit",
+  "type": "dtcroptopia:dragon_fruit",
   "primitive_leaves": "jungle_leaves",
   "cell_kit": "dynamictrees:palm",
   "color": "@birch"
