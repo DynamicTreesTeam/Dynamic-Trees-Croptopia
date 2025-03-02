@@ -2,6 +2,7 @@
   "type": "dynamictrees:branches",
   "pools": [
     {
+      "rolls": 1.0,
       "bonus_rolls": 0.0,
       "entries": [
         {
@@ -16,10 +17,10 @@
           ],
           "name": "minecraft:jungle_log"
         }
-      ],
-      "rolls": 1.0
+      ]
     },
     {
+      "rolls": 1.0,
       "bonus_rolls": 0.0,
       "entries": [
         {
@@ -34,8 +35,7 @@
           ],
           "name": "minecraft:stick"
         }
-      ],
-      "rolls": 1.0
+      ]
     }
   ]
 }

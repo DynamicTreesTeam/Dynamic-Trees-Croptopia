@@ -2,6 +2,7 @@
   "type": "dynamictrees:voluntary",
   "pools": [
     {
+      "rolls": 1.0,
       "bonus_rolls": 0.0,
       "entries": [
         {
@@ -14,8 +15,7 @@
           ],
           "name": "dtcroptopia:cinnamon_seed"
         }
-      ],
-      "rolls": 1.0
+      ]
     }
   ]
 }

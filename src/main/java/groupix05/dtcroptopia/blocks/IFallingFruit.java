@@ -4,7 +4,6 @@ import com.google.common.collect.Lists;
 import groupix05.dtcroptopia.init.DTCROPTOPIARegistries;
 import net.minecraft.core.BlockPos;
 import net.minecraft.sounds.SoundSource;
-import net.minecraft.util.RandomSource;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
@@ -20,6 +19,7 @@ import net.minecraft.world.level.block.state.BlockState;
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 import java.util.List;
+import java.util.Random;
 
 public interface IFallingFruit {
 
@@ -28,7 +28,7 @@ public interface IFallingFruit {
 
     DamageSource getDamageSource();
 
-    default boolean checkToFall(BlockState state, Level world, BlockPos pos, RandomSource random){
+    default boolean checkToFall(BlockState state, Level world, BlockPos pos, Random random){
         if (getAge(state) < getMaxAge()) return false;
         return random.nextFloat() <= getRandomFruitFallChance();
     }

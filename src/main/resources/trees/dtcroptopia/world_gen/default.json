@@ -2,7 +2,7 @@
   {
     "__comment": "Plains biome",
     "select": {
-      "tags": ["#forge:is_plains", "!#forge:is_snowy", "!#forge:is_cold", "#minecraft:is_overworld", "!#forge:is_spooky", "!#forge:is_rare"]
+      "types": ["plains", "!snowy", "!cold", "overworld", "!spooky", "!rare"]
     },
     "apply": {
       "species": {
@@ -19,7 +19,7 @@
   {
     "__comment": "Forest biome (without dark forest)",
     "select": {
-      "tags": ["#minecraft:is_forest", "!#forge:is_coniferous", "#minecraft:is_overworld", "!#forge:is_spooky", "!#forge:is_rare"]
+      "types": ["forest", "!coniferous", "overworld", "!spooky", "!rare"]
     },
     "apply": {
       "species": {
@@ -44,7 +44,7 @@
   {
     "__comment": "Dark Forest biome",
     "select": {
-      "tags": ["#minecraft:is_forest", "!#forge:is_coniferous", "#minecraft:is_overworld", "#forge:is_spooky", "!#forge:is_rare"]
+      "types": ["forest", "!coniferous", "overworld", "spooky", "!rare"]
     },
     "apply": {
       "species": {
@@ -62,7 +62,7 @@
   {
     "__comment": "Jungle biome",
     "select": {
-      "tags": ["#minecraft:is_jungle", "#minecraft:is_overworld", "!#forge:is_spooky", "!#forge:is_rare"]
+      "types": ["jungle", "overworld", "!spooky", "!rare"]
     },
     "apply": {
       "species": {

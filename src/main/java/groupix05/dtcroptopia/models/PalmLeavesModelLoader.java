@@ -5,25 +5,29 @@ import com.google.gson.JsonObject;
 import net.minecraft.ResourceLocationException;
 import net.minecraft.client.renderer.texture.MissingTextureAtlasSprite;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraftforge.client.model.geometry.IGeometryLoader;
+import net.minecraft.server.packs.resources.ResourceManager;
+import net.minecraftforge.client.model.IModelLoader;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-public class PalmLeavesModelLoader implements IGeometryLoader<PalmLeavesModelGeometry> {
+public class PalmLeavesModelLoader implements IModelLoader<PalmLeavesModelGeometry> {
 
     public static final Logger LOGGER = LogManager.getLogger();
 
     private static final String FROND = "frond";
     private static final String TEXTURES = "textures";
 
-    private final int frondType;
+    private int frondType;
 
     public PalmLeavesModelLoader (int type){
         frondType = type;
     }
 
     @Override
-    public PalmLeavesModelGeometry read(JsonObject modelObject, JsonDeserializationContext deserializationContext) {
+    public void onResourceManagerReload(ResourceManager resourceManager) { }
+
+    @Override
+    public PalmLeavesModelGeometry read(JsonDeserializationContext deserializationContext, JsonObject modelObject) {
         final JsonObject textures = this.getTexturesObject(modelObject);
         return new PalmLeavesModelGeometry(getTextureLocation(textures, FROND), frondType);
     }

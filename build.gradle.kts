@@ -87,7 +87,7 @@ dependencies {
     minecraft("net.minecraftforge:forge:$mcVersion-${property("forgeVersion")}")
 
     implementation(fg.deobf("com.ferreusveritas.dynamictrees:DynamicTrees-$mcVersion:${property("dynamicTreesVersion")}"))
-    implementation(fg.deobf("curse.maven:croptopia-415438:4344770"))
+    implementation(fg.deobf("curse.maven:croptopia-415438:3947782"))
     implementation(fg.deobf("com.ferreusveritas.dynamictreesplus:DynamicTreesPlus-$mcVersion:${property("dynamicTreesPlusVersion")}"))
 
     runtimeOnly(fg.deobf("curse.maven:SereneSeasons-291874:${property("ssVersion")}"))
@@ -96,7 +96,7 @@ dependencies {
     runtimeOnly(fg.deobf("mezz.jei:jei-$mcVersion-forge:${property("jeiVersion")}"))
     runtimeOnly(fg.deobf("curse.maven:Jade-324717:${property("jadeVersion")}"))
     runtimeOnly(fg.deobf("org.squiddev:cc-tweaked-$mcVersion:${property("ccVersion")}"))
-    runtimeOnly(fg.deobf("com.harleyoconnor.suggestionproviderfix:SuggestionProviderFix-1.19:${property("suggestionProviderFixVersion")}"))
+    runtimeOnly(fg.deobf("com.harleyoconnor.suggestionproviderfix:SuggestionProviderFix-1.18.1:${property("suggestionProviderFixVersion")}"))
 }
 
 tasks.jar {

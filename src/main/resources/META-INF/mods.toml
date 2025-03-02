@@ -1,6 +1,6 @@
 license="MIT"
 modLoader="javafml"
-loaderVersion="[43,)"
+loaderVersion="[40,)"
 issueTrackerURL="https://github.com/Groupix05/Dynamic-Trees-Croptopia/issues"
 
 [[mods]]
@@ -19,35 +19,35 @@ This addon uses a lot of assets from DT PHC2
 [[dependencies.dtcroptopia]]
     modId="forge"
     mandatory=true
-    versionRange="[43.2.0,44)"
+    versionRange="[40,)"
     ordering="NONE"
     side="BOTH"
 
 [[dependencies.dtcroptopia]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.19.2,1.19.3)"
+    versionRange="[1.18.2]"
     ordering="NONE"
     side="BOTH"
 
 [[dependencies.dtcroptopia]]
     modId="dynamictrees"
     mandatory=true
-    versionRange="[1.2.0,)"
+    versionRange="[1.0.4,)"
     ordering="AFTER"
     side="BOTH"
 
 [[dependencies.dtcroptopia]]
     modId="dynamictreesplus"
     mandatory=false
-    versionRange="[1.1.1,)"
+    versionRange="[1.0.4,)"
     ordering="AFTER"
     side="BOTH"
 
 [[dependencies.dtcroptopia]]
     modId = "croptopia"
     mandatory = true
-    versionRange = "[2.2.2,)"
+    versionRange = "[2.1.0,)"
     ordering = "AFTER"
     side = "BOTH"
 
