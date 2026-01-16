@@ -1,6 +1,7 @@
 {
 	"credit": "Made with Blockbench",
 	"ambientocclusion": false,
+	"render_type": "minecraft:cutout_mipped",
 	"textures": {
 		"particle": "dtcroptopia:block/cashew",
 		"fruit": "dtcroptopia:block/cashew"

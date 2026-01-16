@@ -1,8 +1,8 @@
 package groupix05.dtcroptopia.blocks;
 
-import com.ferreusveritas.dynamictrees.block.FruitBlock;
-import com.ferreusveritas.dynamictrees.block.rooty.RootyBlock;
-import com.ferreusveritas.dynamictrees.systems.fruit.Fruit;
+import com.dtteam.dynamictrees.block.fruit.Fruit;
+import com.dtteam.dynamictrees.block.fruit.FruitBlock;
+import com.dtteam.dynamictrees.block.soil.SoilBlock;
 import groupix05.dtcroptopia.DynamicTreesCROPTOPIA;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Holder;
@@ -71,7 +71,7 @@ public class FallingFruitBlock extends FruitBlock implements IFallingFruit {
     public int getRootY(BlockState state, Level world, BlockPos pos) {
         for (int i=0;i<20;i++){
             BlockPos pos2 = pos.below(i);
-            if (world.getBlockState(pos2).getBlock() instanceof RootyBlock){
+            if (world.getBlockState(pos2).getBlock() instanceof SoilBlock){
                 return pos2.getY();
             }
         }
