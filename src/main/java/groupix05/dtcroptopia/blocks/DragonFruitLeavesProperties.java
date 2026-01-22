@@ -1,16 +1,12 @@
 package groupix05.dtcroptopia.blocks;
 
-import com.ferreusveritas.dynamictrees.api.registry.TypedRegistry;
-import com.ferreusveritas.dynamictrees.block.leaves.DynamicLeavesBlock;
-import com.ferreusveritas.dynamictrees.block.leaves.LeavesProperties;
-import com.ferreusveritas.dynamictrees.block.leaves.PalmLeavesProperties;
-import groupix05.dtcroptopia.DynamicTreesCROPTOPIA;
+import com.dtteam.dynamictrees.api.registry.TypedRegistry;
+import com.dtteam.dynamictrees.block.leaves.DynamicLeavesBlock;
+import com.dtteam.dynamictrees.block.leaves.LeavesProperties;
+import com.dtteam.dynamictrees.block.leaves.PalmLeavesProperties;
 import net.minecraft.core.BlockPos;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -28,8 +24,8 @@ public class DragonFruitLeavesProperties extends PalmLeavesProperties {
     }
 
     @Override
-    public MapColor getDefaultMapColor() {
-        return MapColor.PLANT;
+    public BlockBehaviour.Properties getDefaultBlockProperties() {
+        return super.getDefaultBlockProperties().mapColor(MapColor.PLANT);
     }
 
     @Override

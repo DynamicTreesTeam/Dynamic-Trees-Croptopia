@@ -1,18 +1,18 @@
 package groupix05.dtcroptopia.init;
 
-import com.ferreusveritas.dynamictrees.api.applier.ApplierRegistryEvent;
-import com.ferreusveritas.dynamictrees.deserialisation.PropertyAppliers;
-import com.ferreusveritas.dynamictrees.tree.species.Species;
+import com.dtteam.dynamictrees.deserialization.PropertyAppliers;
+import com.dtteam.dynamictrees.event.ApplierRegistryEvent;
+import com.dtteam.dynamictrees.tree.species.Species;
 import com.google.gson.JsonElement;
 import groupix05.dtcroptopia.DynamicTreesCROPTOPIA;
 import groupix05.dtcroptopia.trees.FruitLogSpecies;
 import groupix05.dtcroptopia.trees.GenOnExtraSoilSpecies;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.fml.common.Mod;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
 
-@Mod.EventBusSubscriber(modid = DynamicTreesCROPTOPIA.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber(modid = DynamicTreesCROPTOPIA.MOD_ID, bus = EventBusSubscriber.Bus.MOD)
 public final class RegisterJSONAppliers {
 
     @SubscribeEvent

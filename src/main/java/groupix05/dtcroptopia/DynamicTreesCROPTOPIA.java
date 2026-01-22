@@ -1,45 +1,35 @@
 package groupix05.dtcroptopia;
 
-import com.ferreusveritas.dynamictrees.api.GatherDataHelper;
-import com.ferreusveritas.dynamictrees.api.registry.RegistryHandler;
-import com.ferreusveritas.dynamictrees.block.leaves.LeavesProperties;
-import com.ferreusveritas.dynamictrees.block.rooty.SoilProperties;
-import com.ferreusveritas.dynamictrees.init.DTConfigs;
-import com.ferreusveritas.dynamictrees.systems.fruit.Fruit;
-import com.ferreusveritas.dynamictrees.systems.pod.Pod;
-import com.ferreusveritas.dynamictrees.tree.family.Family;
-import com.ferreusveritas.dynamictrees.tree.species.Species;
+import com.dtteam.dynamictrees.block.fruit.Fruit;
+import com.dtteam.dynamictrees.block.leaves.LeavesProperties;
+import com.dtteam.dynamictrees.block.pod.Pod;
+import com.dtteam.dynamictrees.data.GatherDataHelper;
+import com.dtteam.dynamictrees.registry.NeoForgeRegistryHandler;
+import com.dtteam.dynamictrees.tree.family.Family;
+import com.dtteam.dynamictrees.tree.species.Species;
 import groupix05.dtcroptopia.init.DTCROPTOPIABlocks;
 import groupix05.dtcroptopia.init.DTCROPTOPIAClient;
 import groupix05.dtcroptopia.init.DTCROPTOPIARegistries;
 import groupix05.dtcroptopia.init.DTCROPTOPIAItems;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.item.ItemStack;
-import net.minecraftforge.common.ForgeConfigSpec;
-import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.eventbus.api.IEventBus;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.fml.ModList;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
-import net.minecraftforge.fml.event.lifecycle.FMLConstructModEvent;
-import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.minecraftforge.data.event.GatherDataEvent;
+import net.neoforged.bus.api.IEventBus;
+import net.neoforged.fml.ModContainer;
+import net.neoforged.fml.common.Mod;
+import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
+import net.neoforged.fml.event.lifecycle.FMLConstructModEvent;
+import net.neoforged.neoforge.data.event.GatherDataEvent;
 
 @Mod(DynamicTreesCROPTOPIA.MOD_ID)
-@Mod.EventBusSubscriber(modid = DynamicTreesCROPTOPIA.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
+
 public class DynamicTreesCROPTOPIA {
     public static final String MOD_ID = "dtcroptopia";
 
-    public DynamicTreesCROPTOPIA() {
-        IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+    public DynamicTreesCROPTOPIA(IEventBus bus, ModContainer modContainer) {
         bus.addListener(this::commonSetup);
         bus.addListener(this::clientSetup);
         bus.addListener(this::gatherData);
 
-        MinecraftForge.EVENT_BUS.register(this);
-
-        RegistryHandler.setup(MOD_ID);
+        NeoForgeRegistryHandler.setup(MOD_ID, bus);
 
         DTCROPTOPIABlocks.register(bus);
         DTCROPTOPIAItems.register(bus);
@@ -66,7 +56,7 @@ public class DynamicTreesCROPTOPIA {
     }
 
     public static ResourceLocation location(final String path) {
-        return new ResourceLocation(MOD_ID, path);
+        return ResourceLocation.fromNamespaceAndPath(MOD_ID, path);
     }
 
 }

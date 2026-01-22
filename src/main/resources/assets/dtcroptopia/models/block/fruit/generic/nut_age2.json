@@ -1,8 +1,9 @@
 {
+    "credit": "Made with Blockbench",
     "ambientocclusion": false,
+    "render_type": "minecraft:cutout_mipped",
     "textures": {
-        "particle": "block/stone",
-        "fruit": "block/stone"
+        "particle": "#fruit"
     },
     "elements": [
         {   "from": [ 6.4, 12, 6.4 ],
