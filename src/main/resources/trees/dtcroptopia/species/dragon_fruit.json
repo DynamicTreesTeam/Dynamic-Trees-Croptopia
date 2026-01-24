@@ -28,7 +28,7 @@
   ],
   "features": [
     {
-      "name": "dtcroptopia:dragon_fruit_fruit",
+      "name": "dtaddon_lib:dragon_fruit_fruit",
       "properties": {
         "fruit": "dtcroptopia:dragon_fruit",
         "fruiting_radius": 2,

@@ -1,5 +1,5 @@
 {
-  "type": "dtcroptopia:generates_on_extra_soil",
+  "type": "dtaddon_lib:generates_on_extra_soil",
   "extra_soil_for_worldgen": "sand",
   "family": "jungle",
   "tapering": 0.2,

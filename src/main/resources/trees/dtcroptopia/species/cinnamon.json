@@ -1,5 +1,5 @@
 {
-  "type": "dtcroptopia:fruit_log",
+  "type": "dtaddon_lib:fruit_log",
   "log_drop_item": "croptopia:cinnamon",
   "log_drop_multiplier": 4.5,
   "family": "dtcroptopia:cinnamon",

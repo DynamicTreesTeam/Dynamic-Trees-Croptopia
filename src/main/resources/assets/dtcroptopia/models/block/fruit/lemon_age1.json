@@ -1,7 +1,7 @@
 {
-    "parent": "dtcroptopia:block/fruit/generic/lemon_age1",
+    "parent": "dynamictrees:block/fruit/apple_age1",
     "textures": {
         "particle": "dtcroptopia:block/lemon",
-        "fruit": "dtcroptopia:block/lemon"
+        "apple": "dtcroptopia:block/lemon"
     }
 }

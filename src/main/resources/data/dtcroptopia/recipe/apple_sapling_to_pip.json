@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "croptopia:apple_sapling"
+    },
+
+    {
+      "item": "dynamictrees:dirt_bucket"
+    }
+  ],
+  "result": {
+    "id": "dynamictrees:apple_oak_seed"
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "type": "dtcroptopia:falling_palm",
+  "type": "dtaddon_lib:falling_palm",
   "item_stack": "dtcroptopia:coconut_seed",
   "max_age": 3,
   "block_shapes": {

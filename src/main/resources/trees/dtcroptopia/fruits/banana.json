@@ -1,5 +1,5 @@
 {
-  "type": "dtcroptopia:offset_down",
+  "type": "dtaddon_lib:offset_down",
   "item_stack": "croptopia:banana",
   "block_shapes": [
     { "function": "fruit", "parameters": { "width": 3, "height": 3, "stem_length": 0 } },

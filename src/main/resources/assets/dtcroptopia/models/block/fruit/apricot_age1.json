@@ -2,6 +2,6 @@
     "parent": "dynamictrees:block/fruit/apple_age1",
     "textures": {
         "particle": "dtcroptopia:block/apricot",
-        "fruit": "dtcroptopia:block/apricot"
+        "apple": "dtcroptopia:block/apricot"
     }
 }

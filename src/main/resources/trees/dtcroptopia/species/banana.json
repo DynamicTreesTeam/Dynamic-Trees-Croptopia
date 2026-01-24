@@ -24,14 +24,14 @@
   ],
   "features": [
     {
-      "name": "dtcroptopia:banana_fruit",
+      "name": "dtaddon_lib:banana_fruit",
       "properties": {
         "fruit": "dtcroptopia:banana",
         "fruiting_radius": 4
       }
     },
     {
-      "name": "dtcroptopia:plant_suckers",
+      "name": "dtaddon_lib:plant_suckers",
       "properties": {
         "sucker_block": "dtcroptopia:banana_sucker"
       }

@@ -1,4 +1,4 @@
-// 1.20.1	2024-12-30T16:14:58.663447346	Block States: dtcroptopia
+// 1.21.1	2026-01-24T19:05:10.837426421	Block States: dtcroptopia
 64f65b1a0778e354a02fd18b12910635397845cd assets/dtcroptopia/blockstates/almond_sapling.json
 de450b8fa3b166ea0d5719f73db8f8cac0be71d7 assets/dtcroptopia/blockstates/apricot_sapling.json
 c2d8c39289a9b4afa0e043a3a71adaf7980bae7f assets/dtcroptopia/blockstates/avocado_sapling.json
@@ -14,7 +14,7 @@ c44f323df59f2a0b1bc200a076fb7656fefe04f4 assets/dtcroptopia/blockstates/coconut_
 8c0b38583ee553431ba3f906cebcf0723bf52d91 assets/dtcroptopia/blockstates/date_leaves.json
 a6f063c39a1ee2cc7cf345e9c6d2984552f0ee0d assets/dtcroptopia/blockstates/date_sapling.json
 f3b5a631c3f100389f6f14aca38ea0f7c79dacd3 assets/dtcroptopia/blockstates/dragon_fruit_branch.json
-5e690a2905001a2d1bbd5e20b1b2ffa62dfa1fe3 assets/dtcroptopia/blockstates/dragon_fruit_leaves.json
+a82f9fc1c2378f77e75442eb41b6eff31ae0c687 assets/dtcroptopia/blockstates/dragon_fruit_leaves.json
 3ea024f38e68d17cddff3839c5f1a2c81025a053 assets/dtcroptopia/blockstates/dragon_fruit_sapling.json
 74c4539f3b58eecfebbbc38cfef5de9f5f26a3aa assets/dtcroptopia/blockstates/fig_sapling.json
 ed0be9c27f6273c04c356711dd97870d603e287b assets/dtcroptopia/blockstates/grapefruit_sapling.json
@@ -45,9 +45,6 @@ fc6a885d14ef8db58199265538233cb472f3ee15 assets/dtcroptopia/models/block/palm_le
 8ec3c0da835848d46a6baf64a4cddb714b48bcf9 assets/dtcroptopia/models/block/palm_leaves/date_core_bottom.json
 f018361ec5b299837f3e1609175112e27f9675c7 assets/dtcroptopia/models/block/palm_leaves/date_core_top.json
 da00d6887dd8da58956c976c82b13540c5bcd207 assets/dtcroptopia/models/block/palm_leaves/date_frond.json
-8c79c7f9d92e9509684a479a13aa50136d8db4cf assets/dtcroptopia/models/block/palm_leaves/dragon_fruit_core_bottom.json
-9260d3d902cdaf88787edc21e48c3a6f52ab2fbc assets/dtcroptopia/models/block/palm_leaves/dragon_fruit_core_top.json
-0d576102dae58941389fa8a5b8e5a1bcee915148 assets/dtcroptopia/models/block/palm_leaves/dragon_fruit_frond.json
 4a57237782717c8e918a299847aacd892ca6f5e6 assets/dtcroptopia/models/block/saplings/almond.json
 7a849487d3813ef0bcd33e55299ef4e396af2777 assets/dtcroptopia/models/block/saplings/apricot.json
 7a849487d3813ef0bcd33e55299ef4e396af2777 assets/dtcroptopia/models/block/saplings/avocado.json

@@ -1,5 +1,5 @@
 {
-  "type": "dtcroptopia:palm",
+  "type": "dtaddon_lib:palm",
   "item_stack": "croptopia:date",
   "max_age": 3,
   "block_shapes": {

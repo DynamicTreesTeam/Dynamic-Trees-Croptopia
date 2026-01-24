@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "dtcroptopia:coconut_seed"
+    }
+  },
+  "result": {
+    "id": "croptopia:coconut",
+    "count": 2
+  }
+}

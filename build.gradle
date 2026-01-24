@@ -77,7 +77,8 @@ runs {
                 '--all',
                 '--output', file('src/generated/resources/').getAbsolutePath(),
                 '--existing', file('src/main/resources/').getAbsolutePath(),
-                "--existing-mod", "dynamictrees")
+                "--existing-mod", "dynamictrees",
+                "--existing-mod", "croptopia")
     }
 }
 
@@ -88,19 +89,28 @@ configurations {
 }
 
 dependencies {
+    //NeoForge
     implementation "net.neoforged:neoforge:${neo_version}"
 
-    //implementation ':dynamictrees:neoforge-1.21.1-1.5.0'
-    implementation 'curse.maven:dynamictrees-252818:7272645'
-    implementation 'curse.maven:dynamictreesplus-478155:7272755'
-    implementation 'curse.maven:jade-324717:6291517'
+    //DynamicTrees
+    implementation "com.dtteam.dynamictrees:dynamictrees-neoforge-1.21.1:${dt_version}"
+    implementation "com.dtteam.dynamictreesplus:DynamicTreesPlus:${dtplus_version}"
+    runtimeOnly "curse.maven:dynamic-trees-addon-lib-1404692:7503264"
 
-    implementation "curse.maven:croptopia-415438:6788725"
-
+    //DynmaicTrees Tools/Utilities
+    runtimeOnly "curse.maven:cc-tweaked-282001:5714512"
+    runtimeOnly 'curse.maven:jade-324717:6291517'
     runtimeOnly "curse.maven:jei-238222:5846880"
+    runtimeOnly "curse.maven:patchouli-306770:6164617"
+    runtimeOnly "curse.maven:suggestion-provider-fix-469647:5598604"
+
+    //Seasons
     runtimeOnly "curse.maven:glitchcore-955399:5660740"
     runtimeOnly "curse.maven:serene-seasons-291874:5753503"
-    runtimeOnly "curse.maven:patchouli-306770:6164617"
+
+    //Other
+    runtimeOnly "curse.maven:croptopia-415438:6788725"
+    runtimeOnly "curse.maven:epherolib-885449:5872111"
 }
 
 tasks.withType(ProcessResources).configureEach {
