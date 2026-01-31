@@ -1,5 +1,5 @@
 {
-    "parent": "dtcroptopia:block/fruit/generic/lemon_age2",
+    "parent": "dtaddon_lib:block/fruit/generic/lemon_age2",
     "textures": {
         "particle": "dtcroptopia:block/lime",
         "fruit": "dtcroptopia:block/lime"

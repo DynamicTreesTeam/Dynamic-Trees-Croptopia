@@ -1,5 +1,5 @@
 {
-	"parent": "dtcroptopia:block/fruit/generic/pear_age1",
+	"parent": "dtaddon_lib:block/fruit/generic/fruit_leaf_age1",
 	"textures": {
 		"particle": "dtcroptopia:block/pear",
 		"fruit": "dtcroptopia:block/pear"

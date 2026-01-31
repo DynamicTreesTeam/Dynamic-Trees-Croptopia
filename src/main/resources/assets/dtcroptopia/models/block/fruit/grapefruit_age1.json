@@ -1,5 +1,5 @@
 {
-	"parent": "dtcroptopia:block/fruit/generic/fruit_age1_32",
+	"parent": "dtaddon_lib:block/fruit/generic/fruit_age1_32",
 	"textures": {
 		"particle": "dtcroptopia:block/grapefruit",
 		"fruit": "dtcroptopia:block/grapefruit"
