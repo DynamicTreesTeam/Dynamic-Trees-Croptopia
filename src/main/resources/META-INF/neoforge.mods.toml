@@ -48,7 +48,7 @@ file="META-INF/accesstransformer.cfg"
 [[dependencies.dtcroptopia]]
     modId="dtaddon_lib"
     type="required"
-    versionRange="[0.2.0-BETA02,)"
+    versionRange="[0.2.0-BETA03,)"
     ordering="AFTER"
     side="BOTH"
 

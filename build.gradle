@@ -97,8 +97,7 @@ dependencies {
     //implementation "com.dtteam.dynamictreesplus:DynamicTreesPlus:${dtplus_version}"
     implementation "curse.maven:dynamictrees-252818:7513464"
     implementation "curse.maven:dynamictreesplus-478155:7513822"
-    runtimeOnly "libs:DynamicTrees-AddonLib-DTteam-neoforge-1.21.1:0.2.0-BETA03"
-    //runtimeOnly "curse.maven:dynamic-trees-addon-lib-1404692:7503264"
+    runtimeOnly "curse.maven:dynamic-trees-addon-lib-1404692:7556695"
 
     //DynmaicTrees Tools/Utilities
     runtimeOnly "curse.maven:cc-tweaked-282001:5714512"
