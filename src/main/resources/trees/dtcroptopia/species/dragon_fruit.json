@@ -22,7 +22,7 @@
       "can_craft_seed_to_sapling": false
     }
   ],
-  "sapling_shape": "dtcroptopia:dragon_fruit_cactus",
+  "sapling_shape": "dtaddon_lib:dragon_fruit_cactus",
   "fruits": [
     "dtcroptopia:dragon_fruit"
   ],

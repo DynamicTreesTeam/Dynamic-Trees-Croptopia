@@ -93,9 +93,12 @@ dependencies {
     implementation "net.neoforged:neoforge:${neo_version}"
 
     //DynamicTrees
-    implementation "com.dtteam.dynamictrees:dynamictrees-neoforge-1.21.1:${dt_version}"
-    implementation "com.dtteam.dynamictreesplus:DynamicTreesPlus:${dtplus_version}"
-    runtimeOnly "curse.maven:dynamic-trees-addon-lib-1404692:7503264"
+    //implementation "com.dtteam.dynamictrees:dynamictrees-neoforge-1.21.1:${dt_version}"
+    //implementation "com.dtteam.dynamictreesplus:DynamicTreesPlus:${dtplus_version}"
+    implementation "curse.maven:dynamictrees-252818:7513464"
+    implementation "curse.maven:dynamictreesplus-478155:7513822"
+    runtimeOnly "libs:DynamicTrees-AddonLib-DTteam-neoforge-1.21.1:0.2.0-BETA03"
+    //runtimeOnly "curse.maven:dynamic-trees-addon-lib-1404692:7503264"
 
     //DynmaicTrees Tools/Utilities
     runtimeOnly "curse.maven:cc-tweaked-282001:5714512"

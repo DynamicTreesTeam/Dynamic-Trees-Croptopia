@@ -26,7 +26,6 @@ public class DynamicTreesCROPTOPIA {
         bus.addListener(this::clientSetup);
         bus.addListener(this::gatherData);
 
-        DTCROPTOPIARegistries.setup();
         DTCROPTOPIABlocks.register(bus);
 
         NeoForgeRegistryHandler.setup(MOD_ID, bus);
